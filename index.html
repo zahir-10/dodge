@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 Dodge Challenger | SRT</title>
+    <link rel="icon" href="10003.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        button {
+            padding: 0.8em 1.8em;
+            position: relative;
+            overflow: hidden;
+            background-color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: .3s;
+            z-index: 1;
+            font-family: inherit;
+            color: #17C3B2;
+        }
+
+        button::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: #000000;
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 105%;
+        }
+
+        button:hover {
+            color: #111;
+        }
+
+        #signin {
+            color: black;
+            background-color: rgba(224, 224, 224, 0.5);
+            display: flex;
+            padding: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-right: 35px;
+            justify-content: right;
+        }
+
+        #signin:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: aliceblue;
+            z-index: 10;
+            font-size: large;
+        }
+
+        #nav1 img {
+            height: 19px;
+            padding-top: 22px;
+            width: 140px;
+            margin-left: 13px;
+        }
+
+        #nav1 #div1 {
+            display: flex;
+            margin-top: -7px;
+            margin-bottom: 5px;
+            justify-content: space-around;
+        }
+
+        #nav1 span {
+            padding-top: 22px;
+            height: 20px;
+        }
+
+        .nav1_a1 {
+            color: aliceblue;
+            font-size: small;
+            padding-top: 27px;
+            padding-left: 24px;
+            padding-right: 20px;
+            padding-bottom: 14px;
+        }
+
+        .nav1_a1:hover {
+            text-decoration: underline;
+            background-color: rgba(128, 128, 128, 0.67);
+        }
+
+        #nav2 {
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: aliceblue
+        }
+
+        #nav2 a {
+            color: black;
+            padding-left: 10px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+            padding-top: 12px;
+            font-size: medium;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .a3:hover {
+            text-decoration: underline;
+        }
+
+        #nav2 div h6 {
+            background-color: rgba(169, 169, 169, 0.403);
+            padding-top: 13px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            z-index: 10;
+            font-size: small;
+            padding-bottom: 16px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        #banner_img {
+            width: 100%;
+            height: 530px;
+        }
+
+        #section1 {
+            color: white;
+            background-color: black;
+
+        }
+
+        #section1 table {
+            border: 1px solid;
+            border-color: aliceblue;
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            text-align: center;
+        }
+
+        #section1 td {
+            padding: 10px 20px 10px 20px;
+        }
+
+        #section1 h1 {
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #section1 td #btn1 {
+            background-color: black;
+            color: aliceblue;
+            font-size: small;
+            border-color: aliceblue;
+            padding: 10px 40px 10px 40px;
+
+        }
+
+        #section1 td #btn2 {
+            background-color: black;
+            color: aliceblue;
+            border-color: aliceblue;
+            color: aliceblue;
+            margin-top: 20px;
+            padding: 10px 9px 10px 15px;
+            font-size: small;
+        }
+
+        #section1 table td p {
+            text-align: left;
+        }
+
+        #section1 p {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #h1 {
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #section2 {
+            background-image: url('10004.jpg');
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+        }
+
+        #section2 button {
+            margin-top: 30px;
+        }
+
+        #section2 #btn1 {
+            background-color: red;
+            color: white;
+            border-color: red;
+            padding: 10px 12px 10px 10px;
+            margin-left: 100px;
+        }
+
+        #section2 #btn2 {
+            color: red;
+            background-color: white;
+            border-color: red;
+            margin-left: 20px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #section2 img {
+            margin-left: 170px;
+            margin-bottom: 25px;
+            margin-top: 30px;
+        }
+
+        #section2 p {
+            padding-right: 64%;
+            text-align: center;
+
+        }
+
+        #h2 {
+            margin-top: 100px;
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .d1 {
+            display: flex;
+            text-align: center;
+            font-size: large;
+        }
+
+        .cards {
+            width: 30%;
+            padding-left: 3%;
+        }
+
+        #h3 {
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        #section4 {
+            display: flex;
+            height: 550px;
+            justify-content: space-evenly;
+        }
+
+        #exp {
+            margin-bottom: 100px;
+            margin-left: 45%;
+            color: aliceblue;
+            background-color: red;
+            padding: 10px;
+        }
+
+        #h4 {
+            padding-left: 7%;
+        }
+
+        #section5 #d1 {
+            background-image: url("10022.jpg");
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: right;
+            padding-bottom: 80px;
+        }
+
+        #section5 #d1 #history,
+        #prod,
+        #explor {
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+
+        #section5 h1 {
+            padding-top: 60px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #section5 button {
+            background-color: red;
+            border-color: red;
+            color: aliceblue;
+            padding: 10px 20px 10px 20px;
+        }
+
+        #h5 {
+            font-size: xx-large;
+        }
+
+        #section6 #d1 {
+            background-image: url('10025.jpg');
+            padding-bottom: 250px;
+            background-repeat: no-repeat;
+        }
+
+        #section6 img {
+            padding-left: 68%;
+            margin-top: 80px;
+        }
+
+        #p1 {
+            margin-left: 800px;
+            margin-right: 5%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: small;
+        }
+
+        #section6 button {
+            background-color: red;
+            border-color: red;
+            color: aliceblue;
+            padding: 10px 10px 10px 10px;
+            margin-left: 70%;
+            margin-top: 20px;
+        }
+
+        #d2 {
+            background-image: url("10027.jpg");
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: right;
+            margin-bottom: 20px;
+            padding-bottom: 100px;
+        }
+
+        #d2 h1,
+        p,
+        button {
+            margin-top: 15px;
+        }
+
+        #p {
+            margin-left: 60px;
+        }
+
+        #d2 h1 {
+            padding-top: 80px;
+            margin-left: 60px;
+        }
+
+        #d2 p {
+            width: 450px;
+            margin-left: 60px;
+        }
+
+        #d2 button {
+            background-color: red;
+            margin-left: 60px;
+            border-color: red;
+            color: aliceblue;
+            padding: 10px;
+        }
+
+        #perfomance {
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        #d4 {
+            background-image: url("10029.jpg");
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: left;
+            padding-bottom: 50px;
+        }
+
+        #d4 #h6,
+        #p2,
+        #btn3 {
+            margin-left: 63%;
+        }
+
+        #d4 #h6 {
+            padding-top: 100px;
+        }
+
+        #d4 #btn3 {
+            background-color: red;
+            color: aliceblue;
+            border-color: red;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+
+        #d4 #p2 {
+            width: 440px;
+        }
+
+        #d5 {
+            background-image: url(10032.jpg);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: right;
+        }
+
+        #h7 {
+            padding-left: 60px;
+            padding-top: 100px;
+        }
+
+        #p3 {
+            width: 400px;
+            margin-left: 60px;
+        }
+
+        #btn4 {
+            background-color: red;
+            margin-left: 60px;
+            border-color: red;
+            color: aliceblue;
+            margin-bottom: 100px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #d6 {
+            background-image: url("10034.jpg");
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: left;
+            padding-bottom: 50px;
+        }
+
+        #d6 #h8,
+        #p4,
+        #btn5 {
+            margin-left: 63%;
+        }
+
+        #d6 #h8 {
+            padding-top: 100px;
+        }
+
+        #d6 #btn5 {
+            background-color: red;
+            color: aliceblue;
+            border-color: red;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+
+        #d6 #p4 {
+            width: 440px;
+        }
+
+        #d7 {
+            background-image: url(10035.jpg);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: right;
+        }
+
+        #h9 {
+            padding-left: 60px;
+            padding-top: 100px;
+        }
+
+        #p5 {
+            width: 400px;
+            margin-left: 60px;
+        }
+
+        #btn6 {
+            background-color: red;
+            margin-left: 60px;
+            border-color: red;
+            color: aliceblue;
+            margin-bottom: 100px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #h10 {
+            border: 3px;
+            border-color: aliceblue;
+            text-align: center;
+            font-size: xxx-large;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #section7 {
+            background-image: url('10001.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 430px;
+            background-size: cover;
+        }
+
+        .ss1 {
+            margin-left: 60px;
+            margin-top: 60 px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #d8 {
+            font-size: larger;
+            color: white;
+            padding-top: 30px;
+            margin: 60px;
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.674);
+        }
+
+        #btn7 {
+            color: white;
+            background-color: red;
+            padding-left: 15px;
+            padding-right: 23px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-color: red;
+        }
+
+        #btn8 {
+            background-color: black;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 2px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-color: white;
+        }
+
+        #h11 {
+            padding-top: 80px;
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #section8 {
+            display: flex;
+            background-color: rgb(41, 39, 39);
+        }
+
+        #d9 {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px 5px 0px;
+            margin-left: 44px;
+        }
+
+        #d10 {
+            display: flex;
+            margin: 20px 50px 25px 0px;
+            width: 150px;
+            margin-right: 100px;
+        }
+
+        .h6 {
+            margin-left: 50px;
+            font-size: 12px;
+        }
+
+        #btn9 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px 10px 10px 10px;
+            background-color: red;
+            color: aliceblue;
+            border-color: red;
+        }
+
+        #i1 {
+            margin-left: 95px;
+            padding-top: 0px;
+            margin-top: 20px;
+            width: 215px;
+            margin-bottom: 40px;
+        }
+
+        #img1 {
+            width: 100px;
+            margin-top: 15px;
+            height: 35px;
+            margin-left: 100px;
+        }
+
+        #d11 {
+            padding-left: 50px;
+        }
+
+        #hr1 {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        li {
+            list-style: none;
+            padding-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #section9,
+        #section10 {
+            background-color: black;
+            display: flex;
+        }
+
+        .a4 {
+            color: white;
+            font-size: smaller;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .a4:hover {
+            text-decoration: underline;
+        }
+
+        #d12 {
+            display: flex;
+            margin-left: 250px;
+            color: white;
+            font-size: mediu;
+        }
+
+        #div2 {
+            display: flex;
+        }
+
+        #d13 {
+            margin-top: 20px;
+        }
+
+        #d13 p {
+            width: 500px;
+            margin-left: 100px;
+            font-size: x-small;
+        }
+
+        .img {
+            width: 100px;
+            margin-top: 15px;
+            height: 35px;
+            /* margin-left: 100px; */
+        }
+
+        #d14 {
+            display: flex;
+        }
+
+        #img4 {
+            margin-left: 100px;
+        }
+
+        #img2 {
+            padding-left: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <a id="signin" href="page2.html" style="font-size:medium;">Sign In / Create an Account</a>
+    <nav id="nav1">
+        <img src="10004.png" alt="">
+        <a class="nav1_a1" href="index.html">VEHICLES</a>
+        <a class="nav1_a1" href="">SHOPPING TOOLS</a>
+        <a class="nav1_a1" href="">DODGE MUSCLE</a>
+        <a class="nav1_a1" href="">OWNER</a>
+        <a class="nav1_a1" href="">DODGE GARAGE</a>
+        <a class="nav1_a1" href="">DODGE POWER BROKERS</a>
+        <span>|</span>
+        <div id="div1">
+            <a class="nav1_a1" href="">FIND A <br> DEALER</a>
+            <a class="nav1_a1" href="">SHOP<br>ONLINE</a>
+            <a class="nav1_a1" href="page1.html">BUILD & <br>PRICE</a>
+        </div>
+    </nav>
+    <nav id="nav2">
+        <div>
+            <h6 class="a3">2023 Challeger</h6>
+        </div>
+        <a class="a3" href="">Overview</a>
+        <a class="a3" href="">Gallery</a>
+        <a class="a3" href="">Last call</a>
+        <a class="a3" href="">Perfomance</a>
+        <a class="a3" href="">Exterior</a>
+        <a class="a3" href="">Interior</a>
+        <a class="a3" href="">Safety&Security</a>
+        <a class="a3" href="">more<b>. . .</b></a>
+    </nav>
+    <img id="banner_img" src="i3.jpg" alt="">
+    <section id="section1">
+        <h1>
+            2023 DODGE CHALLENGER
+        </h1>
+        <table>
+            <td>
+                <p>
+                    MRSP*STARTING AT <br>
+                    <b style="font-size: 40px;">$83,434 </b>
+                    <br>2023 CHALLENGERS SRT SUPER STOCK show
+                </p>
+            </td>
+            <td>
+                <button id="btn1">BUILD AND PRICE</button><br>
+                <button id="btn2">SEARCH NEW INVENTTORY</button>
+            </td>
+        </table>
+        <p>Contact your local Dealer for current offers in 63600 CHANGE ZIP</p>
+    </section>
+    <h1 id="h1"> DELIVERED TO YOUR DOOR</h1>
+    <section id="section2">
+        <img src="10006.png" alt=""><br>
+        <p>The Dodge E-Shop Program lets you navigate the dealership<br>
+            experience from the comfort of your home.Purchase and <br>
+            finance your vechile online and have it delivered right to your <br>
+            driveway through a participating dealership</p>
+        <button id="btn1">SHOP ONLINE</button>
+        <button id="btn2">LEARN MORE</button>
+    </section>
+    <h2 id="h2">THIS IS CHALLENGER TERRITORY</h2>
+    <section id="section3">
+        <div class="d1">
+            <img class="cards" src="10007.jpg" alt="">
+            <img class="cards" src="10008.jpg" alt="">
+            <img class="cards" src="10009.jpg" alt="">
+        </div>
+        <div class="d1">
+            <h3 class="cards">BORN POWERFUL</h3>
+            <h3 class="cards">FIERCE FIVE-SEATER</h3>
+            <h3 class="cards">FLEX WITH FOUR</h3>
+        </div>
+        <div class="d1">
+            <p class="cards">Leading from the front of the pack, the Dodge Challenger SRT® Super Stock flaunt the
+                highest horsepower of any production car
+                , coming in at a whopping 807 ponies.
+            </p>
+            <p class="cards">With this much horsepower, everyone should come along for the ride. That’s why the Dodge
+                Challenger offers Class-Exclusive five-passenger seating
+                ( Disclosure3)
+                .</p>
+            <p class="cards">There’s no need to sacrifice power for versatility in the Dodge Challenger SXT, the world’s
+                first and only muscle coupe with available all-wheel drive
+                ( Disclosure3)
+                .</p>
+        </div>
+    </section>
+    <h1 id="h3">GALLERY</h1>
+    <section id="section4">
+        <div class="s11">
+            <img width="100%" height="55%" src="10011.jpg" alt="" style="padding-bottom: 25px;">
+            <div>
+                <img src="10012.jpg" alt="" width="160px" height="160px">
+                <img src="10014.jpg" alt="" width="160px" height="160px" style="margin-left: 30px;">
+            </div>
+        </div>
+        <div class="s12">
+            <img src="10016.jpg" alt="" height="500px">
+        </div>
+        <div class="s13">
+            <img style="padding-bottom: 30px;" ; src="10018.jpg" alt="" height="230px"><br>
+            <img src="10020.jpg" alt="" height="230px">
+        </div>
+    </section>
+    <button id="exp"><b>EXPLORE FULL GALLERY ></b></button>
+    <h1 id="h4" style="text-align: center;">LAST CALL</h1>
+    <section id="section5">
+        <div id="d1">
+            <h1 id="history">HISTORY IN THE MAKING</h1>
+            <p id="prod">Production for the Challenger is coming to an end, but the <br> horsepower will live on the
+                streets forever. To celebrate the end <br> of an era, the Dodge Brand will release a few available
+                packages <br> and some special models for the Dodge Challenger, inspired by <br> some of the greatest
+                releases over the years.</p>
+            <button id="explor">EXPLORE LAST CALL <b>></b></button>
+            <br><br><br>
+        </div><br>
+        <img src="10023.jpg" width="100%" alt="">
+    </section>
+    <section id="section6">
+        <h1 id="h5" style="text-align: center;">A LIVING LEGEND</h1>
+        <div id="d1">
+            <img src="10026.png" alt="">
+            <p id="p1">On top of bringing undeniable horsepower and mind-blogging quickness the challenger SRT lineup
+                offers enhanced customization and exclusive content.</p>
+            <button>EXPLORE SRT HUB</button>
+        </div>
+    </section>
+    <h1 id="perfomance">PERFOMANCE</h1>
+    <div id="d2">
+        <h1>KING OF THE TRACK</h1>
+        <p>
+            Staying true to our roots by displaying world-class performance and Dodge Brand muscle, the Challenger isn’t
+            afraid to cross any line it stands in front of. Boasting incredible horsepower and speed, the 2023 Dodge
+            Challenger Super stock is powered by a Supercharged 6.2L High-Output HEMI® V8 engine.
+        </p>
+        <button>EXPLORE PERFOMANCE</button>
+    </div>
+    <div id="d3">
+        <img src="10028.jpg" width="100%" alt="">
+        <h1 style="text-align: center;">EXTERIOR</h1>
+    </div>
+    <div id="d4">
+        <h1 id="h6">
+            TIMELESS APPEAL
+        </h1>
+        <p id="p2">
+            Through past and present, the 2023 Dodge Challenger continues to display a jaw-dropping exterior. Putting on
+            a show, the modern details on Challenger enhance its truly timeless looks, making it the perfect match for
+            any muscle fan.
+        </p>
+        <button id="btn3">EXPLORE EXTERIOR</button>
+    </div>
+    <img src="10031.jpg" width="100%" alt="">
+    <h1 style="text-align: center;">INTERIOR</h1>
+    <div id="d5">
+        <h1 id="h7">
+            IT ALL STARTS IN HERE
+        </h1>
+        <p id="p3">
+            The 2023 Dodge Challenger rules the road inside and out, featuring the largest available touchscreen radio
+            in its classat 8.4 inches and Class-Exclusive five-passenger seating. Without letting up on the gas, the
+            Challenger also offers Apple CarPlay®support, Android Auto™compatibility and much more.
+        </p>
+        <button id="btn4">
+            EXPLORE INTERIOR >
+        </button>
+    </div>
+    <img src="10033.jpg" alt="" width="100%">
+    <h1 style="text-align: center;">SAFETY & SECURITY</h1>
+    <div id="d6">
+        <h1 id="h8">
+            POWERFUL PRECAUTIONS
+        </h1>
+        <p id="p4">
+            From the available Deluxe Security Alarm with intrusion module to a mighty frame constructed with
+            high-strength steel and a wide array of other features, the 2023 Dodge Challenger is prepared to help
+            protect all it has to offer from any angle necessary. </p>
+        <button id="btn5">
+            EXPLORE SAFETY & SECURITY >
+        </button>
+    </div>
+    <h1 style="text-align: center;">PACKAGES</h1>
+    <div id="d7">
+        <h1 id="h9">
+            POWERFUL PRECAUTIONS
+        </h1>
+        <p id="p5">
+            From the available Deluxe Security Alarm with intrusion module to a mighty frame constructed with
+            high-strength steel and a wide array of other features, the 2023 Dodge Challenger is prepared to help
+            protect all it has to offer from any angle necessary. </p>
+        <button id="btn6">
+            EXPLORE SAFETY & SECURITY >
+        </button>
+    </div>
+    <img src="10036.jpg" alt="" width="100%">
+    <h1 id="h10"><strong>JAILBREAK</strong></h1>
+    <section id="section7">
+        <div id="d8">
+            <h1 class="ss1" iMRP*Starting atd="jobi">PERSONALIZED<br>POWER</h1>
+            <P class="ss1">For 2023 the entire challenger SRT <br>
+                lineup has acces to exclusive content <br>
+                and customization through the Dodge <br>
+                Jailbreak program
+            </P>
+            <button class="ss1" id="btn7">EXPLORE JAILBREAK</button><br>
+            <button class="ss1" id="btn8">BUILD & EXPLORE</button>
+        </div>
+    </section>
+    <h1 id="h11" style="text-align: center;">CHOOSE YOUR VEHICLE</h1>
+    <p style="text-align: center;">Available in multiple trims. Select a vehicle to explore.</p>
+    <footer>
+        <section id="section8">
+            <div id="d9">
+                <img id="img1" src="10039.png" alt="">
+                <h6 class="h6">Contact Us</h6>
+                <h6 class="h6">Site Map</h6>
+                <h6 class="h6">Careers</h6>
+                <h6 class="h6">Find Your Country</h6>
+                <h6 class="h6">Espanol</h6>
+                <input id="i1" type="text" placeholder="Enter Search Terms">
+            </div>
+            <div id="d10">
+                <button id="btn9">SEARCH</button>
+            </div>
+        </section>
+        <section id="section9">
+            <div id="d11">
+                <ul>
+                    <h5>VEHICLES</h5>
+                    <li>Hornet</li>
+                    <li>Charger</li>
+                    <li>Challeger</li>
+                    <li>Durango</li>
+                    <li>SRT</li>
+                    <li>FCA Work Vehicles</li>
+                    <li>Ram Truck</li>
+                    <li>All Sports car & SUV</li>
+                </ul>
+                <ul>
+                    <H5>SERVICE & MORE</H5>
+                    <li>Warrenty</li>
+                    <li>Mopar Vehicle Protection</li>
+                    <li>Service Coupens</li>
+                    <li>Dodge DrivePlus <br>Mastercard</li>
+                    <li>Shop Parts</li>
+                </ul>
+                <ul>
+                    <h5>Power Brokers</h5>
+                    <li>Power Brokers Dealers</li>
+                    <li>Power Brokers Dealers List</li>
+                    <li>Direction Connection Perfomance Catlog</li>
+                    <li>Shop Direction Perfomance Parts Online</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>RESEARCH</h5>
+                    <li>Bulid and Price</li>
+                    <li>Compare Models</li>
+                    <li>Warrenty</li>
+                    <li>Get a Brochure</li>
+                    <li>Sing UP for Updates</li>
+                    <li>Dodge Brand Muscle Car</li>
+                </ul>
+                <ul>
+                    <h5>LOCATE</h5>
+                    <li>Search New Inventary</li>
+                    <li>Shop Online</li>
+                    <li>Find a Dealer</li>
+                    <li>Schedule a Test Drive</li>
+                    <li>Certified Pre-Owned Inventory</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>DODGE ENTHUSIASTS</h5>
+                    <li>Radford Racing School-Dodge SRT//Experience</li>
+                    <li>Dodge Garage</li>
+                    <li>commercials</li>
+                    <li>Dodge Muscle</li>
+                </ul>
+                <ul>
+                    <h5>COST</h5>
+                    <li>View Incentives& Offers</li>
+                    <li>National Incentive</li>
+                    <li>Calculate Payment</li>
+                    <li>Find Your Trade-in Value</li>
+                    <li>Get a Quote</li>
+                    <li>Get PreQualified</li>
+                </ul>
+                <ul>
+                    <h5>OWNERS</h5>
+                    <li>Owner Site Login/Uconnect Access and SiriusXM Guardian Login</li>
+                    <li>Owners Manuals & User Guides</li>
+                    <li>Find Your Uconnect System</li>
+                    <li>Uconnect Software Update</li>
+                    <li>Recall Information</li>
+                    <li>Dodge Merchandise</li>
+                    <li>Vehicle Order Tracking</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>MY ACCOUNT</h5>
+                    <li>My Dashboard</li>
+                    <li>My Builds</li>
+                    <li>My Inventary</li>
+                    <li>My Searches</li>
+                    <li>My Garage</li>
+                    <li>My Vehicle Orders</li>
+                    <li>My Profile</li>
+                </ul>
+                <ul>
+                    <h5>PRIVACY CENTER</h5>
+                    <li>Privacy Policy</li>
+                    <li>Manage Your Privacy Choices</li>
+                    <li>Cookies Settings</li>
+                </ul>
+                <ul>
+                    <h5>LEGAL</h5>
+                    <li>Copyright</li>
+                    <li>Terms of Use</li>
+                    <li>Legal,Safety and Trademark Information</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr id="hr1">
+        <section id="section10">
+            <div id="div2">
+                <div id="d14">
+                    <img class="img" id="img4" src="10043.png" alt="">
+                    <img class="img" id="img2" src="10044.png" alt="">
+                </div>
+
+                <div id="d12">
+                    <a class="a4" href="">CHRYSLER</a>
+                    <a class="a4" href="">DODGE</a>
+                    <a class="a4" href="">JEEP</a>
+                    <a class="a4" href="">RAM</a>
+                    <a class="a4" href="">MAPRO</a>
+                    <a class="a4" href="">FIAT</a>
+                    <a class="a4" href="">ALFA ROMEO</a>
+                    <a class="a4" href="">FCA FLEET</a>
+                </div>
+            </div>
+
+        </section>
+        <section id="section11">
+            <div id="d13">
+                <p>
+                    ©2023 FCA US LLC. All Rights Reserved.<br>
+                    Chrysler, Dodge, Jeep, Ram, Wagoneer, Mopar and SRT are registered trademarks of FCA US LLC.<br>
+                    ALFA ROMEO and FIAT are registered trademarks of FCA US LLC Group Marketing S.p.A., used with
+                    permission.<br><br>
+
+                    *MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base
+                    model, optional equipment not included. A more expensive model may be shown. Pricing and offers may
+                    change at any time without notification. To get full pricing details, see your dealer.<br><br><br>
+
+
+                    FCA US LLC strives to ensure that its website is accessible to individuals with disabilities. Should
+                    you encounter an issue accessing any content on Dodge.com, please email our Customer Service Team or
+                    call 800-4ADodge, for further assistance or to report a problem. Access to
+                    https://www.dodge.com/webselfservice/dodge/index.html is subject to FCA US LLC’s Privacy Policy and
+                    Terms of Use.
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

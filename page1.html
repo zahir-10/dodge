@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dodge Build & Price | Customize </title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="10003.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #signin {
+            color: black;
+            background-color: rgba(224, 224, 224, 0.5);
+            display: flex;
+            padding: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-right: 35px;
+            justify-content: right;
+        }
+
+        #signin:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: aliceblue;
+            font-size: large;
+        }
+
+        #nav1 img {
+            height: 19px;
+            padding-top: 22px;
+            width: 140px;
+            margin-left: 13px;
+        }
+
+        #nav1 #div1 {
+            display: flex;
+            margin-top: -7px;
+            margin-bottom: 5px;
+            justify-content: space-around;
+        }
+
+        #nav1 span {
+            padding-top: 22px;
+            height: 20px;
+        }
+
+        .nav1_a1 {
+            color: aliceblue;
+            font-size: small;
+            padding-top: 27px;
+            padding-left: 24px;
+            padding-right: 20px;
+            padding-bottom: 14px;
+        }
+
+        .nav1_a1:hover {
+            text-decoration: underline;
+            background-color: rgba(128, 128, 128, 0.67);
+        }
+
+        #p1 {
+            font-size: small;
+            margin-left: 85%;
+            margin-top: 5px;
+        }
+
+        #h1 {
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+
+        }
+
+        .a1 {
+            color: black;
+            text-decoration: none;
+            margin-left: 200px;
+        }
+
+        #section1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .rectangle {
+            height: 3px;
+            width: 33px;
+            margin-left: 200px;
+            background-color: red;
+        }
+
+        .h2 {
+            margin-left: 150px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .card {
+            display: flex;
+        }
+
+        .sapn1 {
+            margin-left: 50px;
+        }
+
+        .sapn2 {
+            margin-left: 30px;
+        }
+
+        #div2 {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        #div2 a {
+            margin-left: 165px;
+        }
+
+        #h1_1 {
+            margin-left: 100px;
+            font-size: 40px;
+        }
+
+        #p2 {
+            margin-left: 120px;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .card1 {
+            display: flex;
+            justify-content: space-evenly;
+            overflow: hidden;
+        }
+
+        .card_img {
+            width: 27%;
+            height: 270px;
+            position: relative;
+            transition: 1.5s ease;
+        }
+
+        .card_img:hover {
+            transform: scale(0.9);
+        }
+
+        #h1_2 {
+            margin-left: 36%;
+            font-size: 32px;
+        }
+
+        .btn1 {
+            padding: 10px 25px 10px 25px;
+        }
+
+        #btn1 {
+            background-color: red;
+            color: aliceblue;
+            font-weight: 700;
+            border-color: rgb(255, 19, 19);
+            margin-left: 450px;
+        }
+
+        #btn2 {
+            background-color: #fff;
+            color: red;
+            font-weight: 700;
+            border-color: red;
+            margin-left: 45px;
+        }
+
+        #section2 {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        #div6 {
+            background-color: black;
+            height: 100px;
+            width: 50%;
+        }
+
+        #div5 {
+            background-color: red;
+            height: 100px;
+            width: 50%;
+        }
+
+        #h5_1,
+        #h5_2,
+        #h2_1,
+        #h2_2 {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #h5_1 {
+            margin-left: 30px;
+            font-weight: 600px;
+        }
+
+        #h5_2 {
+            margin-left: 500px;
+            font-weight: 600px;
+        }
+
+        #h2_1 {
+            margin-left: 30px;
+            font-weight: 600px;
+        }
+
+        #h2_2 {
+            margin-left: 500px;
+            font-weight: 600px;
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #section8 {
+            display: flex;
+            background-color: rgb(41, 39, 39);
+        }
+
+        #d9 {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px 5px 0px;
+            margin-left: 44px;
+        }
+
+        #d10 {
+            display: flex;
+            margin: 20px 50px 25px 0px;
+            width: 150px;
+            margin-right: 100px;
+        }
+
+        .h6 {
+            margin-left: 50px;
+            font-size: 12px;
+        }
+
+        #btn9 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px 10px 10px 10px;
+            background-color: red;
+            color: aliceblue;
+            border-color: red;
+        }
+
+        #i1 {
+            margin-left: 95px;
+            padding-top: 0px;
+            margin-top: 20px;
+            width: 215px;
+            margin-bottom: 40px;
+        }
+
+        #img1 {
+            width: 100px;
+            margin-top: 15px;
+            height: 35px;
+            margin-left: 100px;
+        }
+
+        #d11 {
+            padding-left: 50px;
+        }
+
+        #hr1 {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        li {
+            list-style: none;
+            padding-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #section9,
+        #section10 {
+            background-color: black;
+            display: flex;
+        }
+
+        .a4 {
+            color: white;
+            font-size: smaller;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .a4:hover {
+            text-decoration: underline;
+        }
+
+        #d12 {
+            display: flex;
+            margin-left: 250px;
+            color: white;
+            font-size: mediu;
+        }
+
+        #div3 {
+            display: flex;
+        }
+
+        #d13 {
+            margin-top: 20px;
+        }
+
+        #d13 p {
+            width: 500px;
+            margin-left: 100px;
+            font-size: x-small;
+        }
+
+        .img {
+            width: 100px;
+            margin-top: 15px;
+            height: 35px;
+            /* margin-left: 100px; */
+        }
+
+        #d14 {
+            display: flex;
+        }
+
+        #img4 {
+            margin-left: 100px;
+        }
+
+        #img2 {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="signin" href="page2.html" style="font-size:medium;">Sign In / Create an Account</a>
+    <nav id="nav1">
+        <img src="10004.png" alt="">
+        <a class="nav1_a1" href="index.html">VEHICLES</a>
+        <a class="nav1_a1" href="">SHOPPING TOOLS</a>
+        <a class="nav1_a1" href="">DODGE MUSCLE</a>
+        <a class="nav1_a1" href="">OWNER</a>
+        <a class="nav1_a1" href="">DODGE GARAGE</a>
+        <a class="nav1_a1" href="">DODGE POWER BROKERS</a>
+        <span>|</span>
+        <div id="div1">
+            <a class="nav1_a1" href="">FIND A <br> DEALER</a>
+            <a class="nav1_a1" href="">SHOP<br>ONLINE</a>
+            <a class="nav1_a1" href="page1.html">BUILD & <br>PRICE</a>
+        </div>
+    </nav>
+    <section>
+        <p id="p1">
+            Vehicles shown for 63600 Change Zip
+        </p>
+    </section>
+    <h1 id="h1">
+        BUILD YOUR VEHICLE
+    </h1>
+    <section id="section1">
+        <div id="div4">
+            <a class="a1" href=""><b>2023</b></a>
+            <div class="rectangle"></div>
+            <h2 class="h2">CHARGER</h2>
+            <img src="pg1-i1.png" alt="">
+            <span class="card">
+                <span class="sapn1">
+                    <h2>$34,230</h2>
+                    <p>MSRP*Starting at</p>
+                </span>
+                <span class="sapn2">
+                    <h2>7</h2>
+                    <P>MODELS TO BULID</P>
+                </span>
+            </span>
+        </div>
+        <div>
+            <a class="a1" href=""><b>2023</b></a>
+            <div class="rectangle"></div>
+            <h2 class="h2">CHALLENGER</h2>
+            <img src="pg1_4.png" alt="">
+
+            <span class="card">
+                <span class="sapn1">
+                    <h2>$34,230</h2>
+                    <p>MSRP*Starting at</p>
+                </span>
+                <span class="sapn2">
+                    <h2>7</h2>
+                    <P>MODELS TO BULID</P>
+                </span>
+            </span>
+        </div>
+        <div>
+            <a class="a1" href=""><b>2023</b></a>
+            <div class="rectangle"></div>
+            <h2 class="h2">DURANGO</h2>
+            <img src="pg1_3.png" alt="">
+
+            <span class="card">
+                <span class="sapn1">
+                    <h2>$34,230</h2>
+                    <p>MSRP*Starting at</p>
+                </span>
+                <span class="sapn2">
+                    <h2>7</h2>
+                    <P>MODELS TO BULID</P>
+                </span>
+            </span>
+        </div>
+    </section>
+    <section>
+        <div id="div2">
+            <a class="a1" href=""><b>2023 2024</b></a>
+            <div class="rectangle"></div>
+            <h2 class="h2">HORNET</h2>
+            <img src="pg1_i2.png" alt="">
+
+            <span class="card">
+                <span class="sapn1">
+                    <h2>$34,230</h2>
+                    <p>MSRP*Starting at</p>
+                </span>
+                <span class="sapn2">
+                    <h2>7</h2>
+                    <P>MODELS TO BULID</P>
+                </span>
+            </span>
+        </div>
+    </section>
+    <section>
+        <h1 id="h1_1">GALLERY</h1>
+        <p id="p2">ALL</p>
+        <div>
+            <span class="card1">
+                <img class="card_img" src="10031.jpg" alt="">
+                <img class="card_img" src="10014.jpg" alt="">
+                <img class="card_img" src="10009.jpg" alt="">
+            </span><br>
+            <span class="card1">
+                <img class="card_img" src="10034.jpg" alt="">
+                <img class="card_img" src="10018.jpg" alt="">
+                <img class="card_img" src="10016.jpg" alt="">
+            </span><br>
+            <span class="card1">
+                <img class="card_img" src="10032.jpg" alt="">
+                <img class="card_img" src="10012.jpg" alt="">
+                <img class="card_img" src="10007.jpg" alt="">
+            </span><br>
+        </div>
+        <h1 id="h1_2">MAKE THE NEXT MOVE</h1>
+        <span>
+            <button class="btn1" id="btn1">BUILD&PRICE &nbsp;></button>
+            <button class="btn1" id="btn2">SEARCH AND INVENTORY&nbsp;></button>
+        </span><br>
+        <section id="section2">
+            <div id="div6">
+                <h5 id="h5_1">Previous</h5>
+                <h2 id="h2_1">OVERVIEW</h2>
+            </div>
+            <div id="div5">
+                <h5 id="h5_2">Next</h5>
+                <h2 id="h2_2">LAST CALL</h2>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <section id="section8">
+            <div id="d9">
+                <img id="img1" src="10039.png" alt="">
+                <h6 class="h6">Contact Us</h6>
+                <h6 class="h6">Site Map</h6>
+                <h6 class="h6">Careers</h6>
+                <h6 class="h6">Find Your Country</h6>
+                <h6 class="h6">Espanol</h6>
+                <input id="i1" type="text" placeholder="Enter Search Terms">
+            </div>
+            <div id="d10">
+                <button id="btn9">SEARCH</button>
+            </div>
+        </section>
+        <section id="section9">
+            <div id="d11">
+                <ul>
+                    <h5>VEHICLES</h5>
+                    <li>Hornet</li>
+                    <li>Charger</li>
+                    <li>Challeger</li>
+                    <li>Durango</li>
+                    <li>SRT</li>
+                    <li>FCA Work Vehicles</li>
+                    <li>Ram Truck</li>
+                    <li>All Sports car & SUV</li>
+                </ul>
+                <ul>
+                    <H5>SERVICE & MORE</H5>
+                    <li>Warrenty</li>
+                    <li>Mopar Vehicle Protection</li>
+                    <li>Service Coupens</li>
+                    <li>Dodge DrivePlus <br>Mastercard</li>
+                    <li>Shop Parts</li>
+                </ul>
+                <ul>
+                    <h5>Power Brokers</h5>
+                    <li>Power Brokers Dealers</li>
+                    <li>Power Brokers Dealers List</li>
+                    <li>Direction Connection Perfomance Catlog</li>
+                    <li>Shop Direction Perfomance Parts Online</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>RESEARCH</h5>
+                    <li>Bulid and Price</li>
+                    <li>Compare Models</li>
+                    <li>Warrenty</li>
+                    <li>Get a Brochure</li>
+                    <li>Sing UP for Updates</li>
+                    <li>Dodge Brand Muscle Car</li>
+                </ul>
+                <ul>
+                    <h5>LOCATE</h5>
+                    <li>Search New Inventary</li>
+                    <li>Shop Online</li>
+                    <li>Find a Dealer</li>
+                    <li>Schedule a Test Drive</li>
+                    <li>Certified Pre-Owned Inventory</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>DODGE ENTHUSIASTS</h5>
+                    <li>Radford Racing School-Dodge SRT//Experience</li>
+                    <li>Dodge Garage</li>
+                    <li>commercials</li>
+                    <li>Dodge Muscle</li>
+                </ul>
+                <ul>
+                    <h5>COST</h5>
+                    <li>View Incentives& Offers</li>
+                    <li>National Incentive</li>
+                    <li>Calculate Payment</li>
+                    <li>Find Your Trade-in Value</li>
+                    <li>Get a Quote</li>
+                    <li>Get PreQualified</li>
+                </ul>
+                <ul>
+                    <h5>OWNERS</h5>
+                    <li>Owner Site Login/Uconnect Access and SiriusXM Guardian Login</li>
+                    <li>Owners Manuals & User Guides</li>
+                    <li>Find Your Uconnect System</li>
+                    <li>Uconnect Software Update</li>
+                    <li>Recall Information</li>
+                    <li>Dodge Merchandise</li>
+                    <li>Vehicle Order Tracking</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>MY ACCOUNT</h5>
+                    <li>My Dashboard</li>
+                    <li>My Builds</li>
+                    <li>My Inventary</li>
+                    <li>My Searches</li>
+                    <li>My Garage</li>
+                    <li>My Vehicle Orders</li>
+                    <li>My Profile</li>
+                </ul>
+                <ul>
+                    <h5>PRIVACY CENTER</h5>
+                    <li>Privacy Policy</li>
+                    <li>Manage Your Privacy Choices</li>
+                    <li>Cookies Settings</li>
+                </ul>
+                <ul>
+                    <h5>LEGAL</h5>
+                    <li>Copyright</li>
+                    <li>Terms of Use</li>
+                    <li>Legal,Safety and Trademark Information</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr id="hr1">
+        <section id="section10">
+            <div id="div3">
+                <div id="d14">
+                    <img class="img" id="img4" src="10043.png" alt="">
+                    <img class="img" id="img2" src="10044.png" alt="">
+                </div>
+
+                <div id="d12">
+                    <a class="a4" href="">CHRYSLER</a>
+                    <a class="a4" href="">DODGE</a>
+                    <a class="a4" href="">JEEP</a>
+                    <a class="a4" href="">RAM</a>
+                    <a class="a4" href="">MAPRO</a>
+                    <a class="a4" href="">FIAT</a>
+                    <a class="a4" href="">ALFA ROMEO</a>
+                    <a class="a4" href="">FCA FLEET</a>
+                </div>
+            </div>
+
+        </section>
+        <section id="section11">
+            <div id="d13">
+                <p>
+                    ©2023 FCA US LLC. All Rights Reserved.<br>
+                    Chrysler, Dodge, Jeep, Ram, Wagoneer, Mopar and SRT are registered trademarks of FCA US LLC.<br>
+                    ALFA ROMEO and FIAT are registered trademarks of FCA US LLC Group Marketing S.p.A., used with
+                    permission.<br><br>
+
+                    *MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base
+                    model, optional equipment not included. A more expensive model may be shown. Pricing and offers may
+                    change at any time without notification. To get full pricing details, see your dealer.<br><br><br>
+
+
+                    FCA US LLC strives to ensure that its website is accessible to individuals with disabilities. Should
+                    you encounter an issue accessing any content on Dodge.com, please email our Customer Service Team or
+                    call 800-4ADodge, for further assistance or to report a problem. Access to
+                    https://www.dodge.com/webselfservice/dodge/index.html is subject to FCA US LLC’s Privacy Policy and
+                    Terms of Use.
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

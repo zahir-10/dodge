@@ -1,0 +1,51 @@
+@media screen and (max-width:400px){
+    #section1{
+        margin-top: 50px;
+        display: block;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .card{
+        display: block;
+    }
+    #p1{
+        font-size: small;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    #nav1{
+        display: none;
+        justify-content: space-between;
+        background-color: black;
+        color: aliceblue;
+        font-size: large;
+    }
+    #nav1 #div1{
+        display:none;
+        margin-top: -7px;
+        margin-bottom: 5px;
+        justify-content: space-around;
+    }
+    nav{
+        display: none;
+    }
+    #section8{
+        display: none;
+        background-color: rgb(41, 39, 39);
+    }
+    #d9{
+        display: none;
+        justify-content: space-between;
+        padding: 10px 0px 5px 0px;
+        margin-left: 44px;
+    }
+    #d10{
+        display: none;
+        margin: 20px 50px 25px 0px;
+        width:150px;
+        margin-right: 100px;
+    }
+    footer{
+        width: 600px;
+    }
+}
